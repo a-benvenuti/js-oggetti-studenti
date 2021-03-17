@@ -59,3 +59,13 @@ do {
 
 arrayStudenti.push(studenteNew);
 console.log(arrayStudenti);
+// -----------------------------------EXTRA / PROVE-----------------------------------------------
+//  stampo il mio array sotto forma di lista a schermo
+var listaArray = document.getElementById('lista_array');
+for (var i = 0; i < arrayStudenti.length; i++) {
+  if (arrayStudenti[i] === studenteNew) {
+    listaArray.innerHTML += "<li id='new_elem'>" + arrayStudenti[i]['nome']  + " " + arrayStudenti[i]['cognome'] + " " + arrayStudenti[i]['eta'] + "</li>";
+  } else {
+    listaArray.innerHTML += "<li>" + arrayStudenti[i]['nome']  + " " + arrayStudenti[i]['cognome'] + " " + arrayStudenti[i]['eta'] + "</li>";
+  }
+}

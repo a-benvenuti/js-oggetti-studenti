@@ -13,3 +13,24 @@ body{
 h1{
   text-align: center;
 }
+#lista_array{
+  padding: 30px;
+  list-style-type: none;
+}
+#lista_array li{
+  border: 1px solid #00bb2d;
+  padding-left: 5px;
+}
+#new_elem{
+  color: red;
+  background-color: #00bb2d;
+  font-weight: lighter;
+  animation:0.8s blinker linear infinite;
+}
+/* animazione */
+@keyframes blinker {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+/* /animazione */
